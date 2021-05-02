@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .green>u {
+            color: green;
+        }
+
+        html>body {
+            background: #00d2ff;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #3a7bd5, #00d2ff);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+        .done {
+            text-decoration: line-through;
+        }
+    </style>
+
+    <title>Todo Aplication</title>
+</head>
+
+<body onload="startTime()">
+    <div class="container-fluid">
+        <nav id="navbar" class="navbar navbar-light bg-light">
+            <a class="navbar-brand green" href="index.html"><u>Todo APP</u></a>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <h1 class="badge badge-info" id="nowTime">
+                        <!-- timer -->
+                    </h1>
+                </li>
+            </ul>
+        </nav>
+        <div class="row my-2">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between">
+                        <div>
+                            <h4 class="text-secondary">
+                                Write your todo for now today, tomorrow & whenever.
+                            </h4>
+                        </div>
+                        <div>
+                            <small>@<a href="https://rizalihwan.netlify.app/" target="_blank">rizalihwan</a></small>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="todo">Todo : </label>
+                            <input type="text" class="form-control" id="new_todo">
+                            <button type="button" id="add" class="btn btn-success mt-2">Add <i
+                                    class="fa fa-check"></i></button>
+                        </div>
+                        <hr>
+                        <ul id="todo">
+                            <!-- this for your todo -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- my script -->
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
